@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/legofy.js": {
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    { "source": "/legofy", "destination": "/legofy/" }
+  ]
+}

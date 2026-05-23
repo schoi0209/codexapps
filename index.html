@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codex Apps</title>
+  <meta name="description" content="Sunghoon Choi가 만든 작은 AI 웹앱 모음" />
+  <style>
+    :root {
+      --bg:#070912; --text:#f8fafc; --muted:#aeb7c8; --line:rgba(255,255,255,.14);
+      --card:rgba(255,255,255,.08); --accent:#ffcf24; --accent2:#ff4a3d; --shadow:0 24px 80px rgba(0,0,0,.42);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(circle at 15% 10%,rgba(255,207,36,.2),transparent 30%),radial-gradient(circle at 85% 0%,rgba(255,74,61,.16),transparent 30%),var(--bg)}
+    .wrap{width:min(1080px,calc(100% - 32px));margin:0 auto;padding:52px 0}.top{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:58px}.badge{border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--muted);background:rgba(255,255,255,.05)}
+    h1{font-size:clamp(44px,7vw,88px);line-height:.92;letter-spacing:-.075em;margin:0 0 18px}.grad{background:linear-gradient(120deg,#fff,var(--accent),#ff8f7f);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:19px;color:var(--muted);line-height:1.65;max-width:720px;margin:0 0 34px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.app{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.06));padding:24px;box-shadow:var(--shadow);transition:.18s ease;min-height:230px}.app:hover{transform:translateY(-3px);border-color:rgba(255,207,36,.55)}
+    .icon{width:56px;height:56px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,var(--accent),#fff1a6 50%,var(--accent2));font-size:30px;margin-bottom:24px;box-shadow:inset 0 -7px rgba(0,0,0,.18)}
+    h2{font-size:28px;letter-spacing:-.04em;margin:0 0 10px}.app p{color:var(--muted);line-height:1.55;margin:0 0 20px}.link{font-weight:900;color:var(--accent)}.soon{opacity:.52}.footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <strong>Codex Apps</strong>
+      <div class="badge">AI mini apps by @schoi0209</div>
+    </div>
+    <section>
+      <h1>작게 만들고,<br><span class="grad">빠르게 배포하는 앱들</span></h1>
+      <p class="lead">이 페이지는 루트 랜딩 페이지입니다. 앞으로 만드는 모든 앱은 하위 폴더에 배치하고, 여기에서 링크와 소개를 관리합니다.</p>
+      <div class="grid">
+        <a class="app" href="./legofy/">
+          <div class="icon">🧱</div>
+          <h2>LEGOfy</h2>
+          <p>사진을 업로드하면 주인공은 현실 그대로 유지하고 나머지 세계를 LEGO 디오라마처럼 변환합니다.</p>
+          <span class="link">/legofy 열기 →</span>
+        </a>
+        <div class="app soon">
+          <div class="icon">✨</div>
+          <h2>Next App</h2>
+          <p>다음 앱이 추가되면 이 카드가 실제 링크로 바뀝니다.</p>
+          <span class="link">Coming soon</span>
+        </div>
+      </div>
+    </section>
+    <div class="footer">Root index.html is reserved as the app directory page.</div>
+  </main>
+</body>
+</html>
